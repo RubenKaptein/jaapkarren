@@ -41,7 +41,7 @@
         }
         .info-item {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 15px;
             margin-bottom: 25px;
         }
@@ -50,6 +50,11 @@
             color: var(--secondary-color);
             width: 40px;
             text-align: center;
+            margin-top: 5px;
+        }
+        .info-item strong {
+            display: block;
+            margin-bottom: 5px;
         }
     </style>
 </head>
@@ -67,72 +72,88 @@
     </header>
 
     <section class="container contact-section">
-        <h1 style="text-align: center; margin-bottom: 50px;">Neem Contact Op</h1>
+        <h1 style="text-align: center; margin-bottom: 50px;">Neem Contact Op met Jaap</h1>
         
         <div class="contact-grid">
             <div class="contact-info">
                 <h2>Contactgegevens</h2>
-                <p style="margin-bottom: 30px;">Heeft u vragen over de huurvoorwaarden of wilt u een reservering maken? We staan voor u klaar.</p>
+                <p style="margin-bottom: 30px;">Heeft u vragen over de huurvoorwaarden of wilt u een reservering maken? Jaap staat voor u klaar!</p>
                 
                 <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-user"></i>
                     <div>
-                        <strong>Locatie</strong><br>
-                        Regio [Uw Stad/Dorp]
+                        <strong>Eigenaar</strong>
+                        Jaap Hakvoort
                     </div>
                 </div>
                 
                 <div class="info-item">
-                    <i class="fas fa-phone"></i>
+                    <i class="fas fa-map-marker-alt"></i>
                     <div>
-                        <strong>Telefoon</strong><br>
-                        [Uw Telefoonnummer]
+                        <strong>Locatie</strong>
+                        Regio Flevoland, Urk
                     </div>
                 </div>
                 
                 <div class="info-item">
                     <i class="fab fa-whatsapp"></i>
                     <div>
-                        <strong>WhatsApp</strong><br>
+                        <strong>WhatsApp (Aanbevolen)</strong>
                         <a href="#" id="whatsapp-link" style="color: #25d366; text-decoration: none; font-weight: bold;">Stuur een bericht</a>
+                        <p style="font-size: 0.9rem; margin-top: 5px;">Snelle respons gegarandeerd!</p>
                     </div>
                 </div>
-                
+
                 <div class="info-item">
-                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-info-circle"></i>
                     <div>
-                        <strong>E-mail</strong><br>
-                        [Uw E-mailadres]
+                        <strong>Service Gebied</strong>
+                        Bezorging mogelijk tot 30-40 km vanuit Urk (tegen meerprijs)
                     </div>
+                </div>
+
+                <div style="background: #f0f8ff; padding: 20px; border-radius: 8px; margin-top: 30px;">
+                    <p style="font-size: 0.95rem;"><strong>💡 Tip:</strong> WhatsApp is de snelste manier om contact op te nemen. Jaap reageert snel op berichten!</p>
                 </div>
             </div>
 
             <div class="contact-form">
                 <h2>Bericht Sturen</h2>
+                <p style="margin-bottom: 20px; font-size: 0.95rem;">Vul het formulier in en we nemen zo snel mogelijk contact met u op.</p>
                 <form id="contact-form">
                     <div class="form-group">
-                        <label for="name">Naam</label>
+                        <label for="name">Naam *</label>
                         <input type="text" id="name" placeholder="Uw naam" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">E-mail</label>
+                        <label for="email">E-mail *</label>
                         <input type="email" id="email" placeholder="Uw e-mailadres" required>
                     </div>
                     <div class="form-group">
-                        <label for="message">Bericht</label>
+                        <label for="phone">Telefoonnummer</label>
+                        <input type="tel" id="phone" placeholder="Uw telefoonnummer">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Bericht *</label>
                         <textarea id="message" rows="5" placeholder="Uw bericht of gewenste huurperiode" required></textarea>
                     </div>
-                    <button type="submit" class="btn" style="width: 100%;">Verstuur</button>
+                    <button type="submit" class="btn" style="width: 100%;">Verstuur Bericht</button>
                 </form>
             </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px; padding: 40px; background: var(--white); border-radius: 10px;">
+            <h3>Klaar om te reserveren?</h3>
+            <p style="margin: 15px 0;">Neem direct contact op via WhatsApp voor de snelste respons!</p>
+            <a href="#" id="contact-whatsapp-btn" class="btn" style="background: #25d366; margin-top: 15px;"><i class="fab fa-whatsapp"></i> WhatsApp Jaap</a>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Jaap's Verhuurkarren. Alle rechten voorbehouden.</p>
+            <p>&copy; 2026 Jaap Hakvoort - Jaap's Verhuurkarren. Alle rechten voorbehouden.</p>
             <div class="socials">
-                <a href="#" id="whatsapp-link"><i class="fab fa-whatsapp"></i> WhatsApp ons</a>
+                <a href="#" id="whatsapp-link-footer"><i class="fab fa-whatsapp"></i> WhatsApp ons</a>
             </div>
         </div>
     </footer>
@@ -141,7 +162,7 @@
     <script>
         document.getElementById('contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Bedankt voor uw bericht! We nemen zo snel mogelijk contact met u op.');
+            alert('Bedankt voor uw bericht! Jaap zal zo snel mogelijk contact met u opnemen.');
             this.reset();
         });
     </script>

@@ -1,29 +1,34 @@
 // Configuration - Je kunt hier je eigen nummer invullen
+// BELANGRIJK: Vervang dit nummer met je eigen WhatsApp Business nummer
 const BUSINESS_WHATSAPP_NUMBER = "31612345678"; // Voorbeeldnummer, vervang dit door je eigen nummer
 
 document.addEventListener('DOMContentLoaded', function() {
-    // WhatsApp Link Handler
-    const whatsappLink = document.getElementById('whatsapp-link');
-    if (whatsappLink) {
-        whatsappLink.href = `https://wa.me/${BUSINESS_WHATSAPP_NUMBER}?text=Hallo Jaap, ik heb een vraag over het huren van een aanhanger.`;
-    }
-
-    // Contact Page WhatsApp Button
-    const contactWhatsappBtn = document.getElementById('contact-whatsapp-btn');
-    if (contactWhatsappBtn) {
-        contactWhatsappBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            const message = encodeURIComponent("Hallo Jaap, ik wil graag een aanhanger huren.");
-            window.open(`https://wa.me/${BUSINESS_WHATSAPP_NUMBER}?text=${message}`, '_blank');
-        });
-    }
-
+    // WhatsApp Link Handlers - Alle WhatsApp links op de pagina
+    setupWhatsAppLinks();
+    
     // Simple Calendar Logic (for the Agenda page)
     const calendarElement = document.getElementById('calendar-grid');
     if (calendarElement) {
         generateCalendar();
     }
 });
+
+function setupWhatsAppLinks() {
+    // Alle elementen met whatsapp in hun ID
+    const whatsappElements = document.querySelectorAll('[id*="whatsapp"]');
+    
+    whatsappElements.forEach(element => {
+        const message = encodeURIComponent("Hallo Jaap, ik heb een vraag over het huren van een aanhanger.");
+        element.href = `https://wa.me/${BUSINESS_WHATSAPP_NUMBER}?text=${message}`;
+        
+        element.addEventListener('click', function(e) {
+            if (this.tagName === 'A') {
+                e.preventDefault();
+                window.open(this.href, '_blank');
+            }
+        });
+    });
+}
 
 function generateCalendar() {
     const calendarGrid = document.getElementById('calendar-grid');
