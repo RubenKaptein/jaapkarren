@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ons Aanbod - Jaap's Verhuurkarren</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .trailer-detail {
+            padding: 80px 0;
+            background: var(--white);
+            margin-bottom: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .trailer-flex {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .trailer-flex img {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+        .trailer-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .specs-table td {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .specs-table td:first-child {
+            font-weight: bold;
+            color: var(--primary-color);
+            width: 40%;
+        }
+        .price-tag {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            font-weight: bold;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Jaap's <span>Verhuurkarren</span></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="aanbod.html" class="active">Ons Aanbod</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container" style="padding: 60px 20px;">
+        <h1 style="text-align: center; margin-bottom: 40px;">Onze Verhuurkarren</h1>
+        
+        <!-- Trailer 1 -->
+        <div class="trailer-detail">
+            <div class="trailer-flex">
+                <img src="../img/trailer1.jpg" alt="Saris Grande Campione 1">
+                <div class="trailer-info">
+                    <h2>Saris Grande Campione #1</h2>
+                    <p>De ideale partner voor uw vakantie. Deze bagagewagen biedt een enorme hoeveelheid ruimte en is zeer stabiel achter de auto.</p>
+                    <div class="price-tag">Vanaf €15,- per dag</div>
+                    <table class="specs-table">
+                        <tr><td>Afmetingen (LxBxH)</td><td>184 x 112 x 50 cm</td></tr>
+                        <tr><td>Inhoud</td><td>1015 Liter</td></tr>
+                        <tr><td>Max. Massa</td><td>750 kg</td></tr>
+                        <tr><td>Laadvermogen</td><td>ca. 500 kg</td></tr>
+                        <tr><td>Inclusief</td><td>Disselslot & Reservewiel</td></tr>
+                    </table>
+                    <a href="agenda.html" class="btn" style="margin-top: 25px;">Check Beschikbaarheid</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trailer 2 -->
+        <div class="trailer-detail">
+            <div class="trailer-flex">
+                <img src="../img/trailer2.jpg" alt="Saris Grande Campione 2">
+                <div class="trailer-info">
+                    <h2>Saris Grande Campione #2</h2>
+                    <p>Onze tweede Saris Grande Campione is identiek aan nummer 1. Perfect onderhouden en klaar voor de weg.</p>
+                    <div class="price-tag">Vanaf €15,- per dag</div>
+                    <table class="specs-table">
+                        <tr><td>Afmetingen (LxBxH)</td><td>184 x 112 x 50 cm</td></tr>
+                        <tr><td>Inhoud</td><td>1015 Liter</td></tr>
+                        <tr><td>Max. Massa</td><td>750 kg</td></tr>
+                        <tr><td>Laadvermogen</td><td>ca. 500 kg</td></tr>
+                        <tr><td>Inclusief</td><td>Disselslot & Reservewiel</td></tr>
+                    </table>
+                    <a href="agenda.html" class="btn" style="margin-top: 25px;">Check Beschikbaarheid</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Jaap's Verhuurkarren. Alle rechten voorbehouden.</p>
+            <div class="socials">
+                <a href="#" id="whatsapp-link"><i class="fab fa-whatsapp"></i> WhatsApp ons</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../javascript.js"></script>
+</body>
+</html>

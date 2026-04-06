@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Jaap's Verhuurkarren</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .contact-section {
+            padding: 80px 0;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        .contact-form {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact-info {
+            padding: 30px;
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        .info-item i {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            width: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Jaap's <span>Verhuurkarren</span></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="aanbod.html">Ons Aanbod</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container contact-section">
+        <h1 style="text-align: center; margin-bottom: 50px;">Neem Contact Op</h1>
+        
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Contactgegevens</h2>
+                <p style="margin-bottom: 30px;">Heeft u vragen over de huurvoorwaarden of wilt u een reservering maken? We staan voor u klaar.</p>
+                
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Locatie</strong><br>
+                        Regio [Uw Stad/Dorp]
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <strong>Telefoon</strong><br>
+                        [Uw Telefoonnummer]
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <strong>WhatsApp</strong><br>
+                        <a href="#" id="whatsapp-link" style="color: #25d366; text-decoration: none; font-weight: bold;">Stuur een bericht</a>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>E-mail</strong><br>
+                        [Uw E-mailadres]
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Bericht Sturen</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Naam</label>
+                        <input type="text" id="name" placeholder="Uw naam" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="Uw e-mailadres" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Bericht</label>
+                        <textarea id="message" rows="5" placeholder="Uw bericht of gewenste huurperiode" required></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Verstuur</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Jaap's Verhuurkarren. Alle rechten voorbehouden.</p>
+            <div class="socials">
+                <a href="#" id="whatsapp-link"><i class="fab fa-whatsapp"></i> WhatsApp ons</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../javascript.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Bedankt voor uw bericht! We nemen zo snel mogelijk contact met u op.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
