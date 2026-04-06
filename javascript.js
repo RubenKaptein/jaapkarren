@@ -1,6 +1,6 @@
 // Configuration - Je kunt hier je eigen nummer invullen
 // BELANGRIJK: Vervang dit nummer met je eigen WhatsApp Business nummer
-const BUSINESS_WHATSAPP_NUMBER = "31612345678"; // Voorbeeldnummer, vervang dit door je eigen nummer
+const BUSINESS_WHATSAPP_NUMBER = "+31 6 48757228"; // Voorbeeldnummer, vervang dit door je eigen nummer
 
 document.addEventListener('DOMContentLoaded', function() {
     // WhatsApp Link Handlers - Alle WhatsApp links op de pagina
