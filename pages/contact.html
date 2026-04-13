@@ -3,168 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Jaap's Verhuurkarren</title>
+    <title>Contact | Binnenhuisarchitect Urk</title>
     <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .contact-section {
-            padding: 80px 0;
-        }
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-        }
-        .contact-form {
-            background: var(--white);
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-        .contact-info {
-            padding: 30px;
-        }
-        .info-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 15px;
-            margin-bottom: 25px;
-        }
-        .info-item i {
-            font-size: 1.5rem;
-            color: var(--secondary-color);
-            width: 40px;
-            text-align: center;
-            margin-top: 5px;
-        }
-        .info-item strong {
-            display: block;
-            margin-bottom: 5px;
-        }
-    </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Jaap's <span>Verhuurkarren</span></div>
-            <ul>
+            <div class="logo">URK<span>INTERIEUR</span></div>
+            <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="aanbod.html">Ons Aanbod</a></li>
-                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
 
-    <section class="container contact-section">
-        <h1 style="text-align: center; margin-bottom: 50px;">Neem Contact Op met Jaap</h1>
-        
-        <div class="contact-grid">
-            <div class="contact-info">
-                <h2>Contactgegevens</h2>
-                <p style="margin-bottom: 30px;">Heeft u vragen over de huurvoorwaarden of wilt u een reservering maken? Jaap staat voor u klaar!</p>
-                
-                <div class="info-item">
-                    <i class="fas fa-user"></i>
-                    <div>
-                        <strong>Eigenaar</strong>
-                        Jaap Hakvoort
+    <main>
+        <section class="container" style="padding: 100px 0;">
+            <div style="display: flex; flex-wrap: wrap; gap: 50px;">
+                <div style="flex: 1; min-width: 300px;">
+                    <h1>Neem Contact Op</h1>
+                    <p style="margin: 20px 0 40px;">Heeft u plannen voor uw interieur op Urk? Wij denken graag met u mee. Neem direct contact op via WhatsApp of stuur een bericht.</p>
+                    
+                    <div style="margin-bottom: 30px;">
+                        <h3>Adres</h3>
+                        <p>Havenstraat 12, 8321 AA Urk</p>
                     </div>
-                </div>
-                
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <strong>Locatie</strong>
-                        Regio Flevoland, Urk
+                    
+                    <div style="margin-bottom: 30px;">
+                        <h3>Email</h3>
+                        <p>info@urkinterieur.nl</p>
                     </div>
-                </div>
-                
-                <div class="info-item">
-                    <i class="fab fa-whatsapp"></i>
-                    <div>
-                        <strong>WhatsApp (Aanbevolen)</strong>
-                        <a href="#" id="whatsapp-link" style="color: #25d366; text-decoration: none; font-weight: bold;">Stuur een bericht</a>
-                        <p style="font-size: 0.9rem; margin-top: 5px;">Snelle respons gegarandeerd!</p>
+
+                    <div style="margin-top: 50px;">
+                        <a href="https://wa.me/31612345678?text=Hallo%2C%20ik%20heb%20een%20vraag%20over%20een%20interieurontwerp." class="btn" style="background: #25d366; display: flex; align-items: center; justify-content: center; gap: 10px; width: fit-content;">
+                            <i class="fab fa-whatsapp" style="font-size: 1.5rem;"></i> Stuur WhatsApp bericht
+                        </a>
                     </div>
                 </div>
 
-                <div class="info-item">
-                    <i class="fas fa-info-circle"></i>
-                    <div>
-                        <strong>Service Gebied</strong>
-                        Bezorging mogelijk tot 30-40 km vanuit Urk (tegen meerprijs)
-                    </div>
-                </div>
-
-                <div style="background: #f0f8ff; padding: 20px; border-radius: 8px; margin-top: 30px;">
-                    <p style="font-size: 0.95rem;"><strong>💡 Tip:</strong> WhatsApp is de snelste manier om contact op te nemen. Jaap reageert snel op berichten!</p>
+                <div style="flex: 1; min-width: 300px; background: white; padding: 40px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                    <h3>Stuur ons een bericht</h3>
+                    <form id="contactForm" style="margin-top: 30px;">
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 5px;">Naam</label>
+                            <input type="text" placeholder="Uw naam" style="width: 100%; padding: 12px; border: 1px solid #ddd; outline: none;" required>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 5px;">Email</label>
+                            <input type="email" placeholder="Uw emailadres" style="width: 100%; padding: 12px; border: 1px solid #ddd; outline: none;" required>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; margin-bottom: 5px;">Bericht</label>
+                            <textarea rows="5" placeholder="Uw bericht" style="width: 100%; padding: 12px; border: 1px solid #ddd; outline: none; resize: vertical;" required></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Verstuur Bericht</button>
+                    </form>
+                    <p id="formFeedback" style="margin-top: 20px; color: #2e7d32; display: none;">Bedankt voor uw bericht! We nemen zo spoedig mogelijk contact op.</p>
                 </div>
             </div>
-
-            <div class="contact-form">
-                <h2>Bericht Sturen</h2>
-                <p style="margin-bottom: 20px; font-size: 0.95rem;">Vul het formulier in en we nemen zo snel mogelijk contact met u op.</p>
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label for="name">Naam *</label>
-                        <input type="text" id="name" placeholder="Uw naam" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">E-mail *</label>
-                        <input type="email" id="email" placeholder="Uw e-mailadres" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Telefoonnummer</label>
-                        <input type="tel" id="phone" placeholder="Uw telefoonnummer">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Bericht *</label>
-                        <textarea id="message" rows="5" placeholder="Uw bericht of gewenste huurperiode" required></textarea>
-                    </div>
-                    <button type="submit" class="btn" style="width: 100%;">Verstuur Bericht</button>
-                </form>
-            </div>
-        </div>
-
-        <div style="text-align: center; margin-top: 60px; padding: 40px; background: var(--white); border-radius: 10px;">
-            <h3>Klaar om te reserveren?</h3>
-            <p style="margin: 15px 0;">Neem direct contact op via WhatsApp voor de snelste respons!</p>
-            <a href="#" id="contact-whatsapp-btn" class="btn" style="background: #25d366; margin-top: 15px;"><i class="fab fa-whatsapp"></i> WhatsApp Jaap</a>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Jaap Hakvoort - Jaap's Verhuurkarren. Alle rechten voorbehouden.</p>
-            <div class="socials">
-                <a href="#" id="whatsapp-link-footer"><i class="fab fa-whatsapp"></i> WhatsApp ons</a>
+        <div class="footer-content container">
+            <div class="footer-info">
+                <h3>URK INTERIEUR</h3>
+                <p>Professionele binnenhuisarchitectuur op Urk.</p>
             </div>
+            <div class="footer-links">
+                <h4>Navigatie</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Urk, Nederland</p>
+                <p>Email: info@urkinterieur.nl</p>
+                <a href="https://wa.me/31612345678" class="whatsapp-link"><i class="fab fa-whatsapp"></i> WhatsApp ons</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Urk Interieur. Alle rechten voorbehouden.</p>
         </div>
     </footer>
 
+    <a href="https://wa.me/31612345678" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <script src="../javascript.js"></script>
     <script>
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Bedankt voor uw bericht! Jaap zal zo snel mogelijk contact met u opnemen.');
-            this.reset();
-        });
+        const form = document.getElementById('contactForm');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                this.style.display = 'none';
+                document.getElementById('formFeedback').style.display = 'block';
+            });
+        }
     </script>
 </body>
 </html>
