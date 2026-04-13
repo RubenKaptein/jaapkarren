@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda - Jaap's Verhuurkarren</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .calendar-section {
+            padding: 80px 0;
+        }
+        .calendar-info {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .calendar-legend {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .legend-box {
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+        }
+        .legend-available { background: #e8f5e9; border: 1px solid #2e7d32; }
+        .legend-booked { background: #ffebee; border: 1px solid #c62828; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Jaap's <span>Verhuurkarren</span></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="aanbod.html">Ons Aanbod</a></li>
+                <li><a href="agenda.html" class="active">Agenda</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container calendar-section">
+        <div class="calendar-info">
+            <h1>Beschikbaarheid & Agenda</h1>
+            <p>Hieronder vindt u de actuele beschikbaarheid van onze verhuurkarren.</p>
+            <div class="calendar-legend">
+                <div class="legend-item"><div class="legend-box legend-available"></div> Beschikbaar</div>
+                <div class="legend-item"><div class="legend-box legend-booked"></div> Bezet</div>
+            </div>
+        </div>
+
+        <div class="calendar-container">
+            <div class="calendar-header">
+                <h2 id="month-year">April 2026</h2><iframe src="https://calendar.google.com/calendar/embed?src=jaaphakvoortuk45%40gmail.com&ctz=Europe%2FAmsterdam" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <p>Ziet u een geschikte datum? Neem direct contact op via WhatsApp!</p>
+            <a href="#" id="contact-whatsapp-btn" class="btn" style="margin-top: 20px; background: #25d366;"><i class="fab fa-whatsapp"></i> WhatsApp Reserveren</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Jaap's Verhuurkarren. Alle rechten voorbehouden.</p>
+            <div class="socials">
+                <a href="#" id="whatsapp-link"><i class="fab fa-whatsapp"></i> WhatsApp ons</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../javascript.js"></script>
+</body>
+</html>
