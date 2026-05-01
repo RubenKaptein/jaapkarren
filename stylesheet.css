@@ -197,6 +197,11 @@ nav ul li a:hover, nav ul li a.active {
     font-size: 2.5rem;
 }
 
+.trailer-detail {
+    text-align: center;
+    
+}
+
 .trailer-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -346,6 +351,7 @@ footer {
     list-style: none;
     padding: 0;
     margin: 20px 0;
+    text-align: center;
 }
 
 .checklist li {
