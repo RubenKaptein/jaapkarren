@@ -44,6 +44,57 @@
             gap: 20px;
             margin-top: 20px;
         }
+        
+        /* Compact top section layout */
+        .trailer-top-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+            align-items: start;
+        }
+        
+        .trailer-bottom-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        
+        .compact-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        
+        .compact-info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+        }
+        
+        .compact-info > p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        .compact-info .checklist {
+            margin: 10px 0;
+        }
+        
+        .compact-info .checklist li {
+            font-size: 0.9rem;
+            padding: 6px 0;
+        }
+        
+        @media (max-width: 1024px) {
+            .trailer-top-section,
+            .trailer-bottom-section {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+        
         @media (max-width: 768px) {
             .video-grid {
                 grid-template-columns: 1fr;
@@ -72,7 +123,8 @@
         
         <!-- Trailer 1 -->
         <div class="trailer-detail">
-            <div class="trailer-flex">
+            <!-- Top section: Gallery + Quick Info -->
+            <div class="trailer-top-section">
                 <div class="gallery-container">
                     <div class="main-image-container">
                         <img src="../img/trailer1.jpg" id="mainImage1" alt="Saris Grande Campione 1">
@@ -111,10 +163,10 @@
                     </div>
                 </div>
 
-                <div class="trailer-info">
-                    <h2 style="font-size: 2rem; margin-bottom: 10px;">Saris Grande Campione #1</h2>
+                <div class="compact-info">
+                    <h2>Saris Grande Campione #1</h2>
                     <span class="badge">Standaard Uitvoering</span>
-                    <p style="margin-bottom: 20px; font-size: 1.1rem; color: #555;">Zeer nette bagagewagen met alle essentiële features. Ideaal voor vakanties, weekendjes weg en extra bagage.</p>
+                    <p>Zeer nette bagagewagen met alle essentiële features. Ideaal voor vakanties, weekendjes weg en extra bagage.</p>
 
                     <div class="section-title">✅ Wat je krijgt</div>
                     <ul class="checklist">
@@ -123,7 +175,12 @@
                         <li>🛞 Reservewiel + gereedschap</li>
                         <li>🔌 7-polige stekker</li>
                     </ul>
+                </div>
+            </div>
 
+            <!-- Bottom section: Specs & Pricing -->
+            <div class="trailer-bottom-section">
+                <div>
                     <div class="section-title">📐 Specificaties</div>
                     <table class="specs-table">
                         <tr><td>Binnenmaat</td><td>153 × 103 × 53 cm</td></tr>
@@ -133,7 +190,9 @@
                         <tr><td>Rijbewijs vereist</td><td>B-rijbewijs voldoende</td></tr>
                         <tr><td>Kentekenplaat</td><td>Witte kentekenplaat verplicht</td></tr>
                     </table>
+                </div>
 
+                <div>
                     <div class="section-title">💰 Tarieven</div>
                     <table class="pricing-table">
                         <tr>
@@ -146,8 +205,7 @@
                         <tr><td>Week (7 dagen)</td><td><strong>€50</strong></td></tr>
                     </table>
                     <p style="margin-top: 15px; font-size: 0.95rem; color: #666;"><strong>Borg:</strong> €50 (krijgt u netjes terug als alles in orde terug komt)</p>
-
-                    <a href="agenda.html" class="btn" style="margin-top: 30px; width: 100%; text-align: center;">Check Beschikbaarheid</a>
+                    <a href="agenda.html" class="btn" style="margin-top: 20px; width: 100%; text-align: center;">Check Beschikbaarheid</a>
                 </div>
             </div>
 
@@ -166,18 +224,18 @@
 
         <!-- Trailer 2 -->
         <div class="trailer-detail">
-            <div class="trailer-flex">
+            <!-- Top section: Gallery + Quick Info -->
+            <div class="trailer-top-section">
                 <div class="gallery-container">
                     <div class="main-image-container">
                         <img src="../img/trailer2.jpg" id="mainImage2" alt="Saris Grande Campione 2">
                     </div>
-                    <!-- Indien er meer foto's zijn voor trailer 2 kunnen deze hier als thumbnails -->
                 </div>
 
-                <div class="trailer-info">
-                    <h2 style="font-size: 2rem; margin-bottom: 10px;">Saris Grande Campione #2</h2>
+                <div class="compact-info">
+                    <h2>Saris Grande Campione #2</h2>
                     <span class="badge">Met Fietsendragers</span>
-                    <p style="margin-bottom: 20px; font-size: 1.1rem; color: #555;">Identiek aan #1, maar uitgerust met fietsendragers. Perfect voor fietsvakanties en roadtrips met fietsen!</p>
+                    <p>Identiek aan #1, maar uitgerust met fietsendragers. Perfect voor fietsvakanties en roadtrips met fietsen!</p>
 
                     <div class="section-title">✅ Wat je krijgt</div>
                     <ul class="checklist">
@@ -187,7 +245,12 @@
                         <li>🔌 7-polige stekker</li>
                         <li>🚲 <strong>2x Fietsendragers (inbegrepen!)</strong></li>
                     </ul>
+                </div>
+            </div>
 
+            <!-- Bottom section: Specs & Pricing -->
+            <div class="trailer-bottom-section">
+                <div>
                     <div class="section-title">📐 Specificaties</div>
                     <table class="specs-table">
                         <tr><td>Binnenmaat</td><td>153 × 103 × 53 cm</td></tr>
@@ -196,7 +259,9 @@
                         <tr><td>Laadvermogen</td><td>± 315 kg</td></tr>
                         <tr><td>Fietsendragers</td><td>2 stuks inbegrepen</td></tr>
                     </table>
+                </div>
 
+                <div>
                     <div class="section-title">💰 Tarieven</div>
                     <table class="pricing-table">
                         <tr>
@@ -209,8 +274,7 @@
                         <tr><td>Week (7 dagen)</td><td><strong>€60</strong></td></tr>
                     </table>
                     <p style="margin-top: 15px; font-size: 0.95rem; color: #666;"><strong>Borg:</strong> €50 (krijgt u netjes terug als alles in orde terug komt)</p>
-
-                    <a href="agenda.html" class="btn" style="margin-top: 30px; width: 100%; text-align: center;">Check Beschikbaarheid</a>
+                    <a href="agenda.html" class="btn" style="margin-top: 20px; width: 100%; text-align: center;">Check Beschikbaarheid</a>
                 </div>
             </div>
         </div>
